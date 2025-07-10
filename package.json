@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/genai": "^1.6.0",
+    "@react-pdf/renderer": "^4.3.0",
     "daisyui": "^5.0.43",
+    "marked": "^15.0.12",
     "next": "15.3.3",
     "next-auth": "^5.0.0-beta.28",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-pdf": "^10.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
