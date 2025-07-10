@@ -1,31 +1,79 @@
-import ButtonDashboard from "../components/ButtonDashboard";
-import FAQItem from "@/components/FAQItem";
+import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <section className="bg-base-200 text-sm flex justify-between items-center p-2">
-        <div className="text-primary font-bold">ESL Worksheet Generator</div>
-        <div>
-          <ButtonDashboard />
+      <Navbar hasButton={true} />
+      <section className="py-24 sm:pb-64 xl:pb-72">
+        <div className="max-w-xl mx-auto px-10 sm:max-w-4xl xl:max-w-7xl">
+          <h1 className="text-4xl font-extrabold mb-8 sm:text-7xl">
+            ESL Worksheets Created Just for
+            <span className="text-accent"> Your</span> Students
+          </h1>
+          <h2 className="text-2xl opacity-85 mb-10">
+            Built for busy teachers. Designed for real classrooms.
+          </h2>
+          <p className="text-xl opacity-85 mb-4">
+            ✔️ Personalized to Your Students
+          </p>
+          <p className="text-xl opacity-85 mb-4">✔️ Printable </p>
+          <p className="text-xl opacity-85 mb-10">✔️ Takes Seconds </p>
+
+          <Link href="/dashboard" className="btn btn-lg btn-primary">
+            Create Worksheet
+          </Link>
         </div>
       </section>
-      <section className="text-center px-8 py-32 max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-6">
-          Create Worksheets for Your ESL Students
-        </h1>
-        <p className="opacity-50 mb-8">
-          Found yourself ahead of your lesson plan? Create a worksheet for
-          students in minutes
-        </p>
-        <ButtonDashboard />
+
+      <section className="bg-base-300 py-24">
+        <div className="max-w-xl mx-auto px-10 sm:max-w-4xl xl:max-w-7xl">
+          <h1 className="text-4xl font-extrabold mb-14 sm:text-5xl">Say Goodbye To...</h1>
+          <h2 className="text-2xl opacity-85 font-bold mb-12 sm:text-3xl">
+            ❌ Spending hours preparing new class material every week.
+          </h2>
+          <h2 className="text-2xl opacity-85 font-bold mb-12 sm:text-3xl">
+            ❌ Struggling to find worksheets that match your students' level.
+          </h2>
+          <h2 className="text-2xl opacity-85 font-bold sm:text-3xl">
+            ❌ Using your free time to create extra class material.
+          </h2>
+        </div>
       </section>
-      <section className="text-center max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-center">Frequently Asked Questions</h1>
-        <ul>{[{ question: "Is this a question?", answer: "yes, it is!" }, {question: "Is this a question too?", answer: "yes, it is!"}].map((qa) => (
-         <FAQItem key={qa.question} question={qa.question} answer={qa.answer}/>
-        ))}</ul>
+
+      <section className="py-24 sm:pb-64 xl:pb-72">
+        <div className="max-w-xl mx-auto px-10 sm:max-w-4xl xl:max-w-7xl">
+          <h1 className="text-4xl font-extrabold mb-14 sm:text-5xl">Our worksheets are:</h1>
+          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">✅ Time Efficient</h2>
+          <p className="text-2xl opacity-85 mb-12 sm:text-3xl">
+            Save time, and teach more. No more endless Googling or formatting PDFs. Create printable,
+            custom worksheets in under seconds.
+          </p>
+          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">🎯 Tailored to Your Class</h2>
+          <p className="text-2xl opacity-85 mb-12 sm:text-3xl">
+            Set student age, proficiency level, and topic, to get
+            worksheets that fit your exact needs.
+          </p>
+          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">✏️ Interactive & Print-Ready</h2>
+          <p className="text-2xl opacity-85 mb-12 sm:text-4xl">
+            Print it, project it, or assign it digitally. Our worksheets are
+            classroom-tested and ready to use your way.
+          </p>
+          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">🌍 ESL-Specific Intelligence</h2>
+          <p className="text-2xl opacity-85 sm:text-3xl">
+            Unlike generic worksheet tools, this is built specifically for ESL
+            teachers, by an ESL teacher.
+          </p>
+        </div>
       </section>
+
+      <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+          <p>
+            Made by MahmoudAJ - Copyright © {new Date().getFullYear()}
+          </p>
+        </aside>
+      </footer>
     </div>
   );
 }
