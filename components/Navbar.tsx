@@ -1,17 +1,18 @@
 import Link from "next/link";
+import Image from "next/image"
 
 export default function Navbar(props : {hasButton : boolean}) {
   return (
     <div className="navbar bg-base-300 shadow-sm sm:px-10">
       <div className="navbar-start">
         <Link href="/" className="btn btn-ghost text-lg font-extrabold"> 
-          <img
+          <Image
             alt="Smartsheet ESL logo"
             width="28"
             height="28"
             decoding="async"
             src="/logo.svg"
-          ></img>
+          ></Image>
           <strong className="text-lg font-extrabold tracking-tight">Smartsheet<span className="text-accent">PDF</span></strong>
         </Link>
       </div>

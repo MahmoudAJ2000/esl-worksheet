@@ -1,5 +1,6 @@
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer'
-import { marked } from 'marked'
+import { marked, Tokens } from 'marked'
+
 
 // Basic styling
 const styles = StyleSheet.create({
@@ -50,7 +51,7 @@ export function PdfDocument({ content }: Props) {
           } else if (token.type === 'list') {
             return (
               <View key={i}>
-                {token.items.map((item : any, j : any) => (
+                {token.items.map((item : Tokens.ListItem, j : number) => (
                   <Text key={j} style={styles.listItem}>• {item.text}</Text>
                 ))}
               </View>
