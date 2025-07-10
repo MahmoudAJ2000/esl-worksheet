@@ -1,4 +1,4 @@
-import Form from "@/components/Fom";
+import Form from "@/components/Form";
 export default function Dashboard() {
   return (
 <Form></Form>
