@@ -13,7 +13,7 @@ export default function Form() {
     { id: "A1", label: "Beginner", emoji: "🥚" },
     { id: "A2", label: "Elementary", emoji: "🐣" },
     { id: "B1", label: "Intermediate", emoji: "🐥" },
-    { id: "B2", label: "Upper Intermediate", emoji: "🐓" },
+    { id: "B2", label: "Upper", emoji: "🐓" },
     { id: "C1", label: "Advanced", emoji: "🦅" },
     { id: "C2", label: "Proficiency", emoji: "🐦‍🔥" },
   ];
@@ -56,7 +56,7 @@ export default function Form() {
   return (
     <div>
      <Navbar hasButton={false} />
-      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-4">
+      <form onSubmit={handleSubmit} className="max-w-4xl mx-auto p-4">
         <fieldset className="fieldset p-4 mb-4">
           <legend className="fieldset-legend text-2xl">Age</legend>
           <input
