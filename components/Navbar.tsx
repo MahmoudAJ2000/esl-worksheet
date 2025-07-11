@@ -11,7 +11,7 @@ export default function Navbar(props : {hasButton : boolean}) {
             width="28"
             height="28"
             decoding="async"
-            src="/logo.svg"
+            src="/logo.png"
           ></Image>
           <strong className="text-lg font-extrabold tracking-tight">Smartsheet<span className="text-accent">PDF</span></strong>
         </Link>
