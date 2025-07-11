@@ -28,14 +28,14 @@ export default function Home() {
 
       <section className="bg-base-300 py-24">
         <div className="max-w-xl mx-auto px-10 sm:max-w-4xl xl:max-w-7xl">
-          <h1 className="text-4xl font-extrabold mb-14 sm:text-5xl">Say Goodbye To...</h1>
-          <h2 className="text-2xl opacity-85 font-bold mb-12 sm:text-3xl">
+          <h1 className="text-3xl font-extrabold mb-14 sm:text-4xl">Say Goodbye To...</h1>
+          <h2 className="text-xl opacity-85 font-bold mb-12 sm:text-2xl">
             ❌ Spending hours preparing new class material every week.
           </h2>
-          <h2 className="text-2xl opacity-85 font-bold mb-12 sm:text-3xl">
+          <h2 className="text-xl opacity-85 font-bold mb-12 sm:text-2xl">
             ❌ Struggling to find worksheets that match your students' level.
           </h2>
-          <h2 className="text-2xl opacity-85 font-bold sm:text-3xl">
+          <h2 className="text-xl opacity-85 font-bold sm:text-2xl">
             ❌ Using your free time to create extra class material.
           </h2>
         </div>
@@ -43,24 +43,24 @@ export default function Home() {
 
       <section className="py-24 sm:pb-64 xl:pb-72">
         <div className="max-w-xl mx-auto px-10 sm:max-w-4xl xl:max-w-7xl">
-          <h1 className="text-4xl font-extrabold mb-14 sm:text-5xl">Our worksheets are:</h1>
-          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">✅ Time Efficient</h2>
-          <p className="text-2xl opacity-85 mb-12 sm:text-3xl">
+          <h1 className="text-3xl font-extrabold mb-14 sm:text-4xl">Our worksheets are:</h1>
+          <h2 className="text-2xl font-bold mb-4 sm:text-3xl">✅ Time Efficient</h2>
+          <p className="text-xl opacity-85 mb-12 sm:text-2xl">
             Save time, and teach more. No more endless Googling or formatting PDFs. Create printable,
             custom worksheets in under seconds.
           </p>
-          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">🎯 Tailored to Your Class</h2>
-          <p className="text-2xl opacity-85 mb-12 sm:text-3xl">
+          <h2 className="text-2xl font-bold mb-4 sm:text-3xl">🎯 Tailored to Your Class</h2>
+          <p className="text-xl opacity-85 mb-12 sm:text-2xl">
             Set student age, proficiency level, and topic, to get
             worksheets that fit your exact needs.
           </p>
-          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">✏️ Interactive & Print-Ready</h2>
-          <p className="text-2xl opacity-85 mb-12 sm:text-4xl">
+          <h2 className="text-2xl font-bold mb-4 sm:text-3xl">✏️ Interactive & Print-Ready</h2>
+          <p className="text-xl opacity-85 mb-12 sm:text-2xl">
             Print it, project it, or assign it digitally. Our worksheets are
             classroom-tested and ready to use your way.
           </p>
-          <h2 className="text-3xl font-bold mb-8 sm:text-4xl">🌍 ESL-Specific Intelligence</h2>
-          <p className="text-2xl opacity-85 sm:text-3xl">
+          <h2 className="text-2xl font-bold mb-4 sm:text-3xl">🌍 ESL-Specific Intelligence</h2>
+          <p className="text-xl opacity-85 sm:text-2xl">
             Unlike generic worksheet tools, this is built specifically for ESL
             teachers, by an ESL teacher.
           </p>
